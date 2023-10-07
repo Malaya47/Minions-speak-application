@@ -15,3 +15,13 @@ function translated(innerText) {
   return completeUrl;
   // console.log(completeUrl);
 }
+
+// adding interactivity to the button for translating
+
+buttonTranslate.addEventListener("click", function () {
+  let innerText = textArea.value;
+
+  fetch(translated(innerText))
+    .then((response) => response.json())
+    .then((json) => (translatedText.innerText = json.contents.translated));
+});
