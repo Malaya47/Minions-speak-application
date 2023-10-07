@@ -24,4 +24,5 @@ buttonTranslate.addEventListener("click", function () {
   fetch(translated(innerText))
     .then((response) => response.json())
     .then((json) => (translatedText.innerText = json.contents.translated));
+  console.log(json);
 });
