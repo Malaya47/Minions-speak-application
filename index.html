@@ -7,12 +7,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Minions speak Application</h1>
-    <div>
-      <textarea class="text-js" cols="100" rows="10"></textarea>
-    </div>
-    <div class="translated-text">Sample text</div>
-    <button class="btn-js">Translate</button>
+    <nav class="navigation-bar">
+      <div>Minions speak Application</div>
+    </nav>
+    <main>
+      <textarea
+        placeholder="Put your message here which you want to covert to minions language"
+        class="text-js"
+        cols="70"
+        rows="10"
+      ></textarea>
+      <button class="btn-js">Translate</button>
+      <div class="translation-heading">Translation will come here 👇</div>
+
+      <div class="translated-text"></div>
+    </main>
+
+    <footer>
+      <div>about</div>
+      <p>
+        Are you a fan of minions? Did you know that the gibberish they say is an
+        actual language. Use the translator to convert your text from English to
+        Minion speak.
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
